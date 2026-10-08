@@ -61,39 +61,62 @@
 
 // Oppgave 4
 // 60 procent er bestått
-let sum = 0;
-let bestatt = 0;
+// let sum = 0;
+// let bestatt = 0;
 
-let elever = [
-    {navn:"Ali",poeng:67},
-    {navn:"Nora",poeng:89},
-    {navn:"Sofie",poeng:42},
-    {navn:"jonas",poeng:76},
-    {navn:"Emma",poeng:95}
-];
+// let elever = [
+//     {navn:"Ali",poeng:67},
+//     {navn:"Nora",poeng:89},
+//     {navn:"Sofie",poeng:42},
+//     {navn:"jonas",poeng:76},
+//     {navn:"Emma",poeng:95}
+// ];
 
-let laveste = elever[0].poeng;
-let hoyeste = elever[0].poeng;
-const BESTATT_GRENSE = 60;
+// let laveste = elever[0].poeng;
+// let hoyeste = elever[0].poeng;
+// const BESTATT_GRENSE = 60;
 
-for (let elev of elever) {
+// for (let elev of elever) {
 
-  if (elev.poeng >= BESTATT_GRENSE) {
-    bestatt++;
-  }
-  if (elev.poeng > hoyeste.poeng) {
-    hoyeste = elev;
-  }
-  if (elev.poeng < laveste.poeng) {
-    laveste = elev;
-  }
+//   if (elev.poeng >= BESTATT_GRENSE) {
+//     bestatt++;
+//   }
+//   if (elev.poeng > hoyeste.poeng) {
+//     hoyeste = elev;
+//   }
+//   if (elev.poeng < laveste.poeng) {
+//     laveste = elev;
+//   }
+// }
+
+// for (let resultat of elever) {
+//     sum=+ resultat.poeng;
+//     if(resultat.poeng > hoyestepoengsum){
+//         hoyestepoengsum = resultat.poeng
+//     }
+//     if (resultat.poeng < lavestepoengsum){
+//         lavestepoengsum = resultat.poeng
+//     }
+// }
+
+// const gjennomsnitt = sum / elever.length;
+
+// console.log("Gjennomsnittlig poengsum: " + gjennomsnitt.toFixed(1));
+// console.log("Høyeste poengsum: " + hoyeste.poeng);
+// console.log("Elev med lavest poengsum var", laveste.poeng)
+// console.log("Antall som har bestått: " + bestatt + " av " + elever.length);
+
+// resultater(elever);
+
+
+
+
+// Oppgave 5
+
+let besteElev = elever[0];
+
+if (elev.poeng > besteElev.poeng) {
+    besteElev = elev;
 }
 
-const gjennomsnitt = sum / elever.length;
-
-console.log("Gjennomsnittlig poengsum: " + gjennomsnitt.toFixed(1));
-console.log("Høyeste poengsum: " + hoyeste.poeng);
-console.log("Elev med lavest poengsum var", laveste.poeng)
-console.log("Antall som har bestått: " + bestatt + " av " + elever.length);
-
-
+console.log("Den beste eleven var",besteElev,"med",poeng)
