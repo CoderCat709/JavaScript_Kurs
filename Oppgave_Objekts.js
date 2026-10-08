@@ -76,12 +76,61 @@
 // Del 2 Objekts
 
 
-let elev = {
-    navn: "tage", 
-    poeng:  400
-}
+// let elev = {
+//     navn: "tage", 
+//     poeng:  400
+// }
+
+// for (let elev of elever) {
+//     console.log(elev.navn + " fikk " + elev.poeng + " poeng");
+// }
+
+// Oppgave 5
+
+// let elever = [
+//     { navn: "Tage", poeng: 300 },
+//     { navn: "Denys", poeng: 400 },
+//     { navn: "Konrad", poeng: 500 }
+// ];
+
+
+
+// for (let elev of elever) {
+//     console.log(elev.navn + " fikk " + elev.poeng + " poeng", "-"",  );
+// }
+
+// Oppgave 6
+
+const elever = [
+  { navn: "Anna", poeng: 78 },
+  { navn: "Jonas", poeng: 45 },
+  { navn: "Sara", poeng: 92 },
+  { navn: "Mohammed", poeng: 63 },
+  { navn: "Ingrid", poeng: 38 },
+  { navn: "Lars", poeng: 55 },
+];
+
+
+const BESTATT_GRENSE = 50;
+
+let sum = 0;
+let bestatt = 0;
+let besteElev = elever[0];
 
 for (let elev of elever) {
-    console.log(elev.navn + " fikk " + elev.poeng + " poeng");
+
+  if (elev.poeng >= BESTATT_GRENSE) {
+    bestatt++;
+  }
+
+  if (elev.poeng > besteElev.poeng) {
+    besteElev = elev;
+  }
 }
 
+const gjennomsnitt = sum / elever.length;
+
+console.log("Gjennomsnittlig poengsum: " + gjennomsnitt.toFixed(1));
+console.log("Høyeste poengsum: " + besteElev.poeng);
+console.log("Elev med høyest poengsum: " + besteElev.navn);
+console.log("Antall som har bestått: " + bestatt + " av " + elever.length);
