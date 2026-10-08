@@ -31,9 +31,9 @@
 
 // Oppgave 4
 
-let poeng = [72, 45, 91, 63, 38, 84, 56];
-let elever = ["Ali", "Nora", "Sofie", "Jonas", "Emma"];
-bestått = 
+// let poeng = [72, 45, 91, 63, 38, 84, 56];
+// let elever = ["Ali", "Nora", "Sofie", "Jonas", "Emma"];
+// bestått = 
 
 
 
