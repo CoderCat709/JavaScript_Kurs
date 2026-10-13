@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(24, 21, 21);
+}
+
+header{
+    max-width: 200px;
+    max-height: auto;
+}
+
+header:img{
+    max-width: 200px;
+
+}
+
+nav {
+    display: flex;
+    justify-self: end;
+    position: absolute;
+}
+
+footer{
+    display: flex;
+    justify-content: center;  
+}
+
+h1 {
+    color: rgb(30, 35, 73);
+    border-radius: 10px;
+    border: 0.2vw solid #000000;
+    padding: 5px 5px;
+    max-width: 240px;
+    background-color: white;
+}
+p {
+    border-radius: 5px;
+    border: 0.2vw solid #000000;
+    padding:5px 5px;
+    background-color: white;
+}
+
+produkter {
+    display: flex;
+    justify-content: center;
+}
+produkt {
+    background-color: white;
+    border-radius: 10px;
+    border:solid;
+    padding: 200px auto;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}   

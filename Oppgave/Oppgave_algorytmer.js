@@ -77,17 +77,9 @@
 // const BESTATT_GRENSE = 60;
 
 // for (let elev of elever) {
-
 //   if (elev.poeng >= BESTATT_GRENSE) {
 //     bestatt++;
 //   }
-//   if (elev.poeng > hoyeste.poeng) {
-//     hoyeste = elev;
-//   }
-//   if (elev.poeng < laveste.poeng) {
-//     laveste = elev;
-//   }
-// }
 
 // for (let resultat of elever) {
 //     sum=+ resultat.poeng;
