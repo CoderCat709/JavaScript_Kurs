@@ -8,7 +8,9 @@
 </head>
 <body>
     <header>
-        <img src="img/f84ffd03-1f44-407d-9b4f-c0232997a3b0.png" alt="HusebysalgLogo">
+        <div class="logo">
+            <img src="img/f84ffd03-1f44-407d-9b4f-c0232997a3b0.png" alt="HusebysalgLogo">
+        </div>
         <h1 class="hover">HusebySalg</h1>
     </header>
     <div class="serch">
@@ -17,7 +19,7 @@
         <button type="submit">Search</button>
     </form>   
     </div>
-    <nav>
+    <nav class="navb">
         <select name="dropdown"></select>
             <option value="info"><a href="info.html">Info</a></option>
             <option value="kontakt"><a href="kontaktside.html">kontakt</a></option>
@@ -25,9 +27,20 @@
             <option value="forside"></option> <a href="forside.html">forside</a></option>
         </select>
     </nav>
+    <nav class="navp">
+        <!-- Her skal det være produkt skille -->
+
+
+    </nav>
     <main>
         <div class="produkter">
             <div class="produkt"></div>
+            <script>
+            function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+            }
+            </script>
             <div class="produkt"></div>
             <div class="produkt"></div>
             <div class="produkt"></div>
