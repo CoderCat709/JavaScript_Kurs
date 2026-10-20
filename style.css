@@ -1,20 +1,8 @@
-:root {
-  color-scheme: light;
-  font-family: "Trebuchet MS", sans-serif;
-  color: #18211f;
-  background: #f3f5f1;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 body {
   max-width: 1180px;
   min-height: 100vh;
   margin: 0 auto;
   padding: 24px;
-  background: radial-gradient(ellipse at top right, #e0eee7 0, transparent 42%), #f3f5f1;
 }
 
 header {
@@ -31,7 +19,7 @@ header .logo img {
 
 h1 {
   margin: 0;
-  color: #163c31;
+  color: #2a2769;
   font-size: 1.6rem;
 }
 
@@ -41,7 +29,7 @@ h1 {
   gap: 8px;
   margin: 20px 0 34px;
   padding-bottom: 14px;
-  border-bottom: 1px solid #cbd5cf;
+  border-bottom: 1px solid #270f51;
 }
 
 .hovedmeny a,
@@ -59,7 +47,7 @@ h1 {
 
 .hovedmeny a:hover,
 .hovedmeny a[aria-current="page"] {
-  background: #dce9e1;
+  background: #2e1282;
 }
 
 main {
@@ -75,18 +63,18 @@ main {
 .butikkintro h2 {
   max-width: 650px;
   margin: 8px 0;
-  color: #163c31;
+  color: #2d144a;
   font-size: clamp(2rem, 5vw, 3.5rem);
 }
 
 .butikkintro > p:last-child {
   max-width: 560px;
-  color: #52615a;
+  color: #4c1635;
 }
 
 .produktkategori {
   margin: 0;
-  color: #547364;
+  color: #15517e;
   font-size: 0.82rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -102,7 +90,7 @@ main {
 
 .seksjonstittel h2 {
   margin: 0;
-  color: #163c31;
+  color: #0e1f5a;
 }
 
 .produktliste {
@@ -123,7 +111,7 @@ main {
 
 .produktkort:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 24px #1e352719;
+  box-shadow: 0 10px 24px #1b0a3e19;
 }
 
 .produktbilde,
@@ -132,13 +120,13 @@ main {
   width: 100%;
   height: 210px;
   object-fit: contain;
-  background: #e9eeea;
+  background: #fbfbfb;
 }
 
 .produktbilde--mangler {
   display: grid;
   place-items: center;
-  color: #64736b;
+  color: #040b16;
   font-size: 0.9rem;
 }
 
@@ -149,13 +137,13 @@ main {
 .produktkort h2,
 .produktdetalj h2 {
   margin: 7px 0 12px;
-  color: #163c31;
+  color: #11203a;
   font-size: 1.2rem;
 }
 
 .produktpris {
   margin: 0 0 14px;
-  color: #202a25;
+  color: #122a54;
   font-size: 1.15rem;
   font-weight: 700;
 }
@@ -167,14 +155,14 @@ main {
   font: inherit;
   font-weight: 700;
   text-decoration: none;
-  background: #245847;
+  background: #122a54;
   border: 0;
   border-radius: 4px;
   cursor: pointer;
 }
 
 .kjopsknapp:hover {
-  background: #163c31;
+  background: #122a54;
 }
 
 .produktdetaljside {
@@ -204,7 +192,7 @@ main {
 }
 
 .produktdetalj-innhold > p:not(.produktkategori, .produktpris) {
-  color: #52615a;
+  color: #122a54;
   line-height: 1.6;
 }
 
@@ -215,7 +203,7 @@ footer {
   gap: 10px;
   margin-top: 54px;
   padding-top: 14px;
-  color: #52615a;
+  color: #122a54;
   border-top: 1px solid #cbd5cf;
 }
 
@@ -224,7 +212,7 @@ footer p {
 }
 
 footer a {
-  color: #245847;
+  color: #122a54;
 }
 
 @media (max-width: 650px) {

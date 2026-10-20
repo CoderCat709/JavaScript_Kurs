@@ -61,6 +61,15 @@ const produkter = [
         bilde: "img/mobil.png",
         minstepris: 5000,
         hoyestepris: 9500
+    },
+    {
+        id: "MysteryBox",
+        produkt: "MysteryBox",
+        kategori: "Box",
+        beskrivelse: "En mysterie box der du kan få gaver og andre ting",
+        bilde: "img/"
+
+
     }
 ];
 // brukte hjelpemidler men forstår hvordan koden furnkerer, hjelpemidler: vsc innebygd ai, 
