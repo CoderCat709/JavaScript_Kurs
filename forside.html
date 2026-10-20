@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,38 +13,25 @@
         </div>
         <h1 class="hover">HusebySalg</h1>
     </header>
-    <div class="serch">
-        <form action="/search_results" method="GET">
-        <input type="text" name="query" placeholder="Search..." required>
-        <button type="submit">Search</button>
-    </form>   
-    </div>
-    <nav class="navb">
-        <select name="dropdown"></select>
-            <option value="info"><a href="info.html">Info</a></option>
-            <option value="kontakt"><a href="kontaktside.html">kontakt</a></option>
-            <option value="produkt"></option><a href="produktside.html">produkter</a></option>
-            <option value="forside"></option> <a href="forside.html">forside</a></option>
-        </select>
-    </nav>
-    <nav class="navp">
-        <!-- Her skal det være produkt skille -->
-
-
+    <nav class="hovedmeny" aria-label="Hovedmeny">
+        <a href="forside.html" aria-current="page">Forside</a>
+        <a href="produktside.html">Produkter</a>
+        <a href="info.html">Info</a>
+        <a href="kontaktside.html">Kontakt</a>
     </nav>
     <main>
-        <div class="produkter">
-            <div class="produkt"></div>
-            <script>
-            function myFunction() {
-            var popup = document.getElementById("myPopup");
-            popup.classList.toggle("show");
-            }
-            </script>
-            <div class="produkt"></div>
-            <div class="produkt"></div>
-            <div class="produkt"></div>
-        </div>
+        <section class="butikkintro">
+            <p class="produktkategori">HusebySalg</p>
+            <h2>Utstyr til din neste setup</h2>
+            <p>Se gjennom produktene våre og finn noe som passer for deg.</p>
+        </section>
+        <section aria-labelledby="produktoverskrift">
+            <div class="seksjonstittel">
+                <h2 id="produktoverskrift">Utvalgte produkter</h2>
+                <a href="produktside.html">Se alle produkter</a>
+            </div>
+            <div class="produktliste" id="produktliste"></div>
+        </section>
     </main>
     <footer>
         <p>Eid og vedlikeholdt av Henrik Huseby</p>

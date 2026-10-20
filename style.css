@@ -1,112 +1,248 @@
+:root {
+  color-scheme: light;
+  font-family: "Trebuchet MS", sans-serif;
+  color: #18211f;
+  background: #f3f5f1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-    background-color: rgb(255, 240, 240);
+  max-width: 1180px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 24px;
+  background: radial-gradient(ellipse at top right, #e0eee7 0, transparent 42%), #f3f5f1;
 }
 
-header{
-    max-width: 200px;
-    max-height: auto;
+header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
-header:img{
-    max-width: 200px;
-
-}
-
-nav {
-    display: flex;
-    justify-self: end;
-    position: absolute;
-}
-
-footer{
-    display: flex;
-    justify-content: center;  
+header .logo img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
 }
 
 h1 {
-    color: rgb(30, 35, 73);
-    border-radius: 10px;
-    border: 0.2vw solid #000000;
-    padding: 5px 5px;
-    max-width: 240px;
-    background-color: white;
-}
-p {
-    border-radius: 5px;
-    border: 0.2vw solid #000000;
-    padding:5px 5px;
-    background-color: white;
+  margin: 0;
+  color: #163c31;
+  font-size: 1.6rem;
 }
 
-produkter {
-    display: flex;
-    justify-content: center;
-}
-produkt {
-    background-color: white;
-    border-radius: 10px;
-    border:solid;
-    padding: 200px auto;
+.hovedmeny {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 20px 0 34px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #cbd5cf;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
+.hovedmeny a,
+.tilbake,
+.seksjonstittel a {
+  color: #245847;
+  font-weight: 700;
+  text-decoration: none;
 }
-.dropdown:hover .dropdown-content {
+
+.hovedmeny a {
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.hovedmeny a:hover,
+.hovedmeny a[aria-current="page"] {
+  background: #dce9e1;
+}
+
+main {
+  min-height: 55vh;
+}
+
+.butikkintro {
+  margin: 0 0 42px;
+  padding: 26px 0;
+  border-bottom: 1px solid #cbd5cf;
+}
+
+.butikkintro h2 {
+  max-width: 650px;
+  margin: 8px 0;
+  color: #163c31;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.butikkintro > p:last-child {
+  max-width: 560px;
+  color: #52615a;
+}
+
+.produktkategori {
+  margin: 0;
+  color: #547364;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.seksjonstittel {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.seksjonstittel h2 {
+  margin: 0;
+  color: #163c31;
+}
+
+.produktliste {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
+  gap: 18px;
+}
+
+.produktkort {
+  overflow: hidden;
+  color: inherit;
+  text-decoration: none;
+  background: #fff;
+  border: 1px solid #d7ded9;
+  border-radius: 6px;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.produktkort:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px #1e352719;
+}
+
+.produktbilde,
+.produktdetaljbilde {
   display: block;
-}   
+  width: 100%;
+  height: 210px;
+  object-fit: contain;
+  background: #e9eeea;
+}
 
+.produktbilde--mangler {
+  display: grid;
+  place-items: center;
+  color: #64736b;
+  font-size: 0.9rem;
+}
 
-.popup {
-  position: relative;
+.produktkort-innhold {
+  padding: 16px;
+}
+
+.produktkort h2,
+.produktdetalj h2 {
+  margin: 7px 0 12px;
+  color: #163c31;
+  font-size: 1.2rem;
+}
+
+.produktpris {
+  margin: 0 0 14px;
+  color: #202a25;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.kjopsknapp {
   display: inline-block;
+  padding: 10px 14px;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  background: #245847;
+  border: 0;
+  border-radius: 4px;
   cursor: pointer;
 }
 
+.kjopsknapp:hover {
+  background: #163c31;
+}
 
-.popup .popuptext {
-  visibility: hidden;
-  width: 160px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
+.produktdetaljside {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tilbake {
+  display: inline-block;
+  margin-bottom: 18px;
+}
+
+.produktdetalj {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 28px;
+  align-items: center;
+  padding: 22px;
+  background: #fff;
+  border: 1px solid #d7ded9;
   border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
 }
 
-/* Popup arrow */
-.popup .popuptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
+.produktdetaljbilde {
+  height: 340px;
+  border-radius: 4px;
 }
 
-/* Toggle this class when clicking on the popup container (hide and show the popup) */
-.popup .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s
+.produktdetalj-innhold > p:not(.produktkategori, .produktpris) {
+  color: #52615a;
+  line-height: 1.6;
 }
 
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 54px;
+  padding-top: 14px;
+  color: #52615a;
+  border-top: 1px solid #cbd5cf;
 }
 
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: #245847;
+}
+
+@media (max-width: 650px) {
+  body {
+    padding: 18px;
+  }
+
+  .produktdetalj {
+    grid-template-columns: 1fr;
+    padding: 16px;
+  }
+
+  .produktdetaljbilde {
+    height: 250px;
+  }
+
+  .seksjonstittel {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }

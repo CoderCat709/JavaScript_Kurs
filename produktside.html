@@ -1,29 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produkter</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1 class="hover">HusebySalg:Produkt</h1>
     </header>
-    <nav>
-        <select name="dropdown"></select>
-            <option value="info"><a href="info.html">Info</a></option>
-            <option value="kontakt"><a href="kontaktside.html">kontakt</a></option>
-            <option value="produkt"></option><a href="produktside.html">produkter</a></option>
-            <option value="forside"></option> <a href="forside.html">forside</a></option>
-        </select>
+    <nav class="hovedmeny" aria-label="Hovedmeny">
+        <a href="forside.html">Forside</a>
+        <a href="produktside.html" aria-current="page">Produkter</a>
+        <a href="info.html">Info</a>
+        <a href="kontaktside.html">Kontakt</a>
     </nav>
+    <!-- Brukte litt hjelpemidler -->
     <main>
-        <div class="produkter">
-            <div class="produkt"></div>
-            <div class="produkt"></div>
-            <div class="produkt"></div>
-            <div class="produkt"></div>
-        </div>
+        <a class="tilbake" href="forside.html">&larr; Til produktoversikten</a>
+        <section aria-labelledby="produktoverskrift">
+            <div class="seksjonstittel">
+                <h2 id="produktoverskrift">Alle produkter</h2>
+            </div>
+            <div class="produktliste" id="produktliste"></div>
+        </section>
+        <section class="produktdetalj" id="produktdetalj" aria-live="polite"></section>
     </main>
     <footer>
         <p>Eid og vedlikeholdt av Henrik Huseby</p>
