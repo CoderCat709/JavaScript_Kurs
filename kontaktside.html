@@ -8,15 +8,16 @@
 </head>
 <body>
     <header>
-        <h1 class="hover">HusebySalg: Kontakt</h1>
+        <div class="logo">
+            <img src="img/logo.png" alt="HusebysalgLogo">
+        </div>
+        <h1 class="hover">HusebySalg:Kontakt</h1>
     </header>
-    <nav>
-        <select name="dropdown"></select>
-            <option value="info"><a href="info.html">Info</a></option>
-            <option value="kontakt"><a href="kontaktside.html">kontakt</a></option>
-            <option value="produkt"></option><a href="produktside.html">produkter</a></option>
-            <option value="forside"></option> <a href="forside.html">forside</a></option>
-        </select>
+    <nav class="hovedmeny" aria-label="Hovedmeny">
+        <a href="forside.html">Forside</a>
+        <a href="produktside.html" aria-current="page">Produkter</a>
+        <a href="info.html">Info</a>
+        <a href="kontaktside.html">Kontakt</a>
     </nav>
     <main>
         <p class="kover">Kontakt Info</p>
