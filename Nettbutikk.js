@@ -31,7 +31,7 @@ const produkter = [
         produkt: "Gaming-mus",
         kategori: "Tilbehor",
         beskrivelse: "Presis og komfortabel mus med rask respons til spilling og vanlig bruk.",
-        bilde: "img/",
+        bilde: "img/gamingmus.png",
         minstepris: 250,
         hoyestepris: 700
     },
@@ -67,9 +67,9 @@ const produkter = [
         produkt: "MysteryBox",
         kategori: "Box",
         beskrivelse: "En mysterie box der du kan få gaver og andre ting",
-        bilde: "img/"
-
-
+        bilde: "img/slop.png",
+        minstepris: 200,
+        hoyestepris: 201
     }
 ];
 // brukte hjelpemidler men forstår hvordan koden furnkerer, hjelpemidler: vsc innebygd ai, v3schools, google search 

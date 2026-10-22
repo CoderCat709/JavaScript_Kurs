@@ -1,10 +1,17 @@
+@import 'https://fonts.googleapis.com/css2?family=Knewave&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Knewave&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=DM+Sans:wght@400;500;600&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Chewy&family=Knewave&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet';
+
+
 body {
   max-width: 1180px;
   min-height: 100vh;
   margin: 0 auto;
   padding: 24px;
-  color: #26332e;
+  color: #141615;
   background: #fff;
+  font-family: 'DM Sans', sans-serif;
 }
 
 header {
@@ -17,7 +24,6 @@ header .logo img {
   width: 64px;
   height: 64px;
   object-fit: contain;
-  transition: transform 200ms ease, filter 200ms ease;
 }
 
 @keyframes fadeIn {
@@ -32,9 +38,14 @@ header .logo img {
 
 h1 {
   margin: 0;
-  color: #26332e;
+  color: #141615;
   font-size: 1.6rem;
   animation: slideUp 0.4s ease-out;
+  font-family: 'DM Sans', sans-serif;
+}
+
+p {
+  font-family: 'DM Sans', sans-serif;
 }
 
 .hovedmeny {
@@ -50,7 +61,7 @@ h1 {
 .hovedmeny a,
 .tilbake,
 .seksjonstittel a {
-  color: #28634b;
+  color: #141615;
   font-weight: 700;
   text-decoration: none;
   animation: slideUp 0.4s ease-out;
@@ -67,6 +78,12 @@ main {
   min-height: 55vh;
 }
 
+imgK {
+  max-height: 200px;
+  max-width: auto;
+  object-fit: contain;
+}
+
 .butikkintro {
   margin: 0 0 42px;
   padding: 26px 0;
@@ -77,20 +94,20 @@ main {
 .butikkintro h2 {
   max-width: 650px;
   margin: 8px 0;
-  color: #26332e;
+  color: #141615;
   font-size: clamp(2rem, 5vw, 3.5rem);
   animation: slideUp 0.4s ease-out;
 }
 
 .butikkintro > p:last-child {
   max-width: 560px;
-  color: #66736c;
+  color: #141615;
   animation: slideUp 0.4s ease-out;
 }
 
 .produktkategori {
   margin: 0;
-  color: #56816a;
+  color: #141615;
   font-size: 0.82rem;
   font-weight: 700;
   animation: slideUp 0.4s ease-out;
@@ -107,7 +124,7 @@ main {
 
 .seksjonstittel h2 {
   margin: 0;
-  color: #26332e;
+  color: #141615;
   animation: slideUp 0.6s ease-out;
 }
 
@@ -125,7 +142,7 @@ main {
   background: #fff;
   border: 1px solid #e7ece8;
   border-radius: 10px;
-  box-shadow: 0 2px 8px #26332e08;
+  box-shadow: 0 0.2px 2px #141615;
   animation: slideUp 0.4s ease-out;
 }
 
@@ -142,7 +159,7 @@ main {
 .produktbilde--mangler {
   display: grid;
   place-items: center;
-  color: #66736c;
+  color: #141615;
   font-size: 0.9rem;
 }
 
@@ -153,13 +170,13 @@ main {
 .produktkort h2,
 .produktdetalj h2 {
   margin: 7px 0 12px;
-  color: #26332e;
+  color: #141615;
   font-size: 1.2rem;
 }
 
 .produktpris {
   margin: 0 0 14px;
-  color: #28634b;
+  color: #141615;
   font-size: 1.15rem;
   font-weight: 700;
 }
@@ -171,7 +188,7 @@ main {
   font: inherit;
   font-weight: 700;
   text-decoration: none;
-  background: #34724f;
+  background: #867e43;
   border: 0;
   border-radius: 6px;
   cursor: pointer;
@@ -179,7 +196,7 @@ main {
 }
 
 .kjopsknapp:hover {
-  background: #285d3e;
+  background: #161614;
   transform: translateY(-1px);
   box-shadow: 0 4px 10px #26332e1c;
 }
