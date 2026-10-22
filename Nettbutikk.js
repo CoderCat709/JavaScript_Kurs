@@ -31,7 +31,7 @@ const produkter = [
         produkt: "Gaming-mus",
         kategori: "Tilbehor",
         beskrivelse: "Presis og komfortabel mus med rask respons til spilling og vanlig bruk.",
-        bilde: "",
+        bilde: "img/",
         minstepris: 250,
         hoyestepris: 700
     },
@@ -72,7 +72,7 @@ const produkter = [
 
     }
 ];
-// brukte hjelpemidler men forstår hvordan koden furnkerer, hjelpemidler: vsc innebygd ai, 
+// brukte hjelpemidler men forstår hvordan koden furnkerer, hjelpemidler: vsc innebygd ai, v3schools, google search 
 const prisLagringsnokkel = "husebySalgPriser";
 const handlekurvLagringsnokkel = "husebySalgHandlekurv";
 const lagredePriser = JSON.parse(localStorage.getItem(prisLagringsnokkel) || "{}");
