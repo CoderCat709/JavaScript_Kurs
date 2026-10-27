@@ -72,5 +72,3 @@ const produkter = [
         hoyestepris: 201
     }
 ];
-
-
