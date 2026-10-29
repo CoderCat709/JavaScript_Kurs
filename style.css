@@ -22,12 +22,6 @@ header .logo img {
   object-fit: contain;
 }
 
-h1,
-h2,
-p {
-  margin-top: 0;
-}
-
 .hovedmeny {
   flex-wrap: wrap;
   margin: 16px 0 32px;
@@ -36,7 +30,7 @@ p {
 }
 
 a {
-  color: #222;
+  color: #000000;
 }
 
 .hovedmeny a,
@@ -48,9 +42,6 @@ main {
   min-height: 55vh;
 }
 
-.butikkintro {
-  margin-bottom: 32px;
-}
 
 .butikkintro h2 {
   margin-bottom: 8px;
@@ -64,49 +55,49 @@ main {
   gap: 16px;
 }
 
-.produktliste {
+.varer {
   display: grid;
-}
-
-.produktkort {
-  display: grid;
-  grid-template-columns: 80px 1fr auto;
-  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 16px;
-  padding: 12px 0;
-  color: inherit;
-  text-decoration: none;
-  border-bottom: 1px solid #ddd;
 }
 
-.produktkort:hover,
-.produktkort:focus-visible {
-  background: #f5f5f5;
+
+.vare {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 18px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.produktbilde {
-  width: 80px;
-  height: 72px;
+.vare:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.bilde {
+  width: 100%;
+  height: 150px;
   object-fit: contain;
+  margin-bottom: 8px;
 }
 
-.produktkort-innhold h2 {
+.vare h2 {
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.15rem;
 }
 
-.produktkategori,
-.produktkort-innhold p {
+.vare p {
   margin: 0;
 }
 
-.produktkategori {
+.type {
   color: #666;
   font-size: 0.9rem;
-}
-
-.produktpris {
-  font-weight: 700;
 }
 
 .produktdetalj {
@@ -134,8 +125,7 @@ main {
   cursor: pointer;
 }
 
-.kjopsknapp:hover,
-.kjopsknapp:focus-visible {
+.kjopsknapp:hover {
   background: #222;
 }
 

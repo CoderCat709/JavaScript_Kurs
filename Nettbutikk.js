@@ -72,3 +72,5 @@ const produkter = [
         hoyestepris: 201
     }
 ];
+
+let handekruv = [];
