@@ -14,7 +14,7 @@
         <h1>Produkter</h1>
     </header>
     <nav class="hovedmeny" aria-label="Hovedmeny">
-        <a href="forside.html">Forside</a>
+        <a href="index.html">Forside</a>
         <a href="produktside.html" aria-current="page">Produkter</a>
         <a href="info.html">Info</a>
         <a href="kontaktside.html">Kontakt</a>
@@ -22,82 +22,99 @@
     <main>
         <h2 id="tittel">Produkter</h2>
         <section class="varer" aria-labelledby="tittel">
-                <article class="vare">
+            <a class="produktlenke" href="produkt.html?id=tastatur">
+                <article class="vare" data-produkt-id="tastatur">
                     <img class="bilde" src="img/keybord.png" alt="Tastatur">
                     <h2>Tastatur</h2>
                     <p class="type">Tilbehør</p>
                     <p>Godt tastatur til spill og skole.</p>
-                    <p>Produkt-ID: <strong>tastatur</strong></p>
+                    <p>Produkt-ID: tastatur</p>
                     <p class="pris">350 - 650 kr</p>
                 </article>
+            </a>
 
-                <article class="vare">
+            <a class="produktlenke" href="produkt.html?id=skjerm">
+                <article class="vare" data-produkt-id="skjerm">
                     <img class="bilde" src="img/screen.png" alt="Skjerm">
                     <h2>Skjerm</h2>
                     <p class="type">Skjerm</p>
                     <p>Skarp skjerm til spill og skole.</p>
-                    <p>Produkt-ID: <strong>skjerm</strong></p>
+                    <p>Produkt-ID: skjerm</p>
                     <p class="pris">1 200 - 2 200 kr</p>
                 </article>
+            </a>
 
-                <article class="vare">
+            <a class="produktlenke" href="produkt.html?id=pc">
+                <article class="vare" data-produkt-id="pc">
                     <img class="bilde" src="img/laptop.png" alt="Laptop">
                     <h2>Laptop</h2>
                     <p class="type">Datamaskin</p>
                     <p>Praktisk PC til skole, arbeid og spill.</p>
-                    <p>Produkt-ID: <strong>pc</strong></p>
+                    <p>Produkt-ID: pc</p>
                     <p class="pris">8 000 - 14 000 kr</p>
                 </article>
+            </a>
 
-                <article class="vare">
+            <a class="produktlenke" href="produkt.html?id=mus">
+                <article class="vare" data-produkt-id="mus">
                     <img class="bilde" src="img/gamingmus.png" alt="Mus">
                     <h2>Mus</h2>
                     <p class="type">Tilbehør</p>
                     <p>Presis mus med rask respons.</p>
-                    <p>Produkt-ID: <strong>mus</strong></p>
+                    <p>Produkt-ID: mus</p>
                     <p class="pris">250 - 700 kr</p>
                 </article>
+            </a>
 
-                <article class="vare">
+            <a class="produktlenke" href="produkt.html?id=setup">
+                <article class="vare" data-produkt-id="setup">
                     <img class="bilde" src="img/setupp.png" alt="Gamingpakke">
                     <h2>Gamingpakke</h2>
                     <p class="type">Pakke</p>
                     <p>Alt du trenger til en gamingplass.</p>
-                    <p>Produkt-ID: <strong>setup</strong></p>
+                    <p>Produkt-ID: setup</p>
                     <p class="pris">16 000 - 26 000 kr</p>
                 </article>
+            </a>
 
-                <article class="vare">
+            <a class="produktlenke" href="produkt.html?id=headset">
+                <article class="vare" data-produkt-id="headset">
                     <img class="bilde" src="img/headset.png" alt="Headset">
                     <h2>Headset</h2>
                     <p class="type">Lyd</p>
                     <p>God lyd til spill og samtaler.</p>
-                    <p>Produkt-ID: <strong>headset</strong></p>
+                    <p>Produkt-ID: headset</p>
                     <p class="pris">1 000 - 2 500 kr</p>
                 </article>
+            </a>
 
-                <article class="vare">
+            <a class="produktlenke" href="produkt.html?id=mobil">
+                <article class="vare" data-produkt-id="mobil">
                     <img class="bilde" src="img/mobil.png" alt="Mobil">
                     <h2>Mobil</h2>
                     <p class="type">Mobil</p>
                     <p>Enkel mobil til bilder, apper og kontakt.</p>
-                    <p>Produkt-ID: <strong>mobil</strong></p>
+                    <p>Produkt-ID: mobil</p>
                     <p class="pris">5 000 - 9 500 kr</p>
                 </article>
+            </a>
 
-                <article class="vare">
+            <a class="produktlenke" href="produkt.html?id=mysterybox">
+                <article class="vare" data-produkt-id="MysteryBox">
                     <img class="bilde" src="img/slop.png" alt="Mysteriebox">
                     <h2>Mysteriebox</h2>
                     <p class="type">Boks</p>
                     <p>En boks med tilfeldige overraskelser.</p>
-                    <p>Produkt-ID: <strong>MysteryBox</strong></p>
+                    <p>Produkt-ID: mysterybox</p>
                     <p class="pris">200 - 201 kr</p>
                 </article>
+            </a>
         </section>
     </main>
     <footer>
         <p>Eid og vedlikeholdt av Henrik Huseby</p>
         <a href="kontaktside.html">Kontakt Info</a>
     </footer>
+    <script src="Nettbutikk.js"></script>
 </body>
 </html>

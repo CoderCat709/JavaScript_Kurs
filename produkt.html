@@ -1,38 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Produkt</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="logo">
             <img src="img/logo.png" alt="HusebysalgLogo">
         </div>
-        <h1 class="hover">HusebySalg:Produkt</h1>
+        <h1>HusebySalg:Produkt</h1>
     </header>
     <nav class="hovedmeny" aria-label="Hovedmeny">
-        <a href="forside.html">Forside</a>
+        <a href="index.html">Forside</a>
         <a href="produktside.html" aria-current="page">Produkter</a>
         <a href="info.html">Info</a>
         <a href="kontaktside.html">Kontakt</a>
     </nav>
-
-    <main class="grid">
-        <section class="Overskrift">
-            <p id="id"></p>
-            <p id="produkter"></p>
-            <p id=""></p>
-            <p id=""></p>
-            <p id=""></p>
-
-        </section>
+    <main>
+        <!-- JavaScript fyller inn produktet her -->
+        <section id="produktDetalj" class="produkt"></section>
     </main>
     <footer>
         <p>Eid og vedlikeholdt av Henrik Huseby</p>
         <a href="kontaktside.html">Kontakt Info</a>
     </footer>
-    <script src="Nettbutikk.js"></script>
+
+    <script src="produkter.js"></script>
+    <script>
+        // Henter produktet som ble valgt (id står i lenken: produkt.html?id=mus)
+        const id = new URLSearchParams(location.search).get("id");
+        const produkt = produkter.find((vare) => vare.id === id);
+
+        document.getElementById("produktDetalj").innerHTML = `
+            <a class="tilbake" href="produktside.html">Tilbake til produkter</a>
+            <h2>${produkt.navn}</h2>
+            <img class="produktdetaljbilde" src="${produkt.bilde}" alt="${produkt.navn}">
+            <p>${produkt.beskrivelse}</p>
+            <p>${produkt.minstepris} - ${produkt.hoyestepris} kr</p>
+        `;
+    </script>
 </body>
 </html>
