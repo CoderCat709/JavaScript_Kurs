@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>handlekurv</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="HusebysalgLogo">
+        </div>
+        <h1>Handlekurv</h1>
+    </header>
+    <nav class="hovedmeny" aria-label="Hovedmeny">
+        <a href="index.html">Forside</a>
+        <a href="produktside.html" aria-current="page">Produkter</a>
+        <a href="info.html">Info</a>
+        <a href="kontaktside.html">Kontakt</a>
+        <a class="kurvlenke" href="handlekurv.html" aria-label="Åpne handlekurv">
+            <img src="img/shopping-cart.png" alt="Handlekurv">
+            <span id="antallKurv">0</span>
+        </a>
+    </nav>
+    <main>
+        <h2 id="tittel">Handlekurv: Produkter</h2>
+        <section id="handlekurvListe" class="varer" aria-labelledby="tittel">
+            
+        </section>
+    </main>
+    <footer>
+        <p>Eid og vedlikeholdt av Henrik Huseby</p>
+        <a href="kontaktside.html">Kontakt Info</a>
+    </footer>
+    <script src="produkter.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

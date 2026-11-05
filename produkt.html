@@ -18,9 +18,12 @@
         <a href="produktside.html" aria-current="page">Produkter</a>
         <a href="info.html">Info</a>
         <a href="kontaktside.html">Kontakt</a>
+        <a class="kurvlenke" href="handlekurv.html" aria-label="Åpne handlekurv">
+            <img src="img/shopping-cart.png" alt="Handlekurv">
+            <span id="antallKurv">0</span>
+        </a>
     </nav>
     <main>
-        <!-- JavaScript fyller inn produktet her -->
         <section id="produktDetalj" class="produkt"></section>
     </main>
     <footer>
@@ -30,17 +33,18 @@
 
     <script src="produkter.js"></script>
     <script>
-        // Henter produktet som ble valgt (id står i lenken: produkt.html?id=mus)
         const id = new URLSearchParams(location.search).get("id");
         const produkt = produkter.find((vare) => vare.id === id);
 
         document.getElementById("produktDetalj").innerHTML = `
-            <a class="tilbake" href="produktside.html">Tilbake til produkter</a>
+                <a class="tilbake" href="produktside.html">Tilbake til produkter</a>
             <h2>${produkt.navn}</h2>
             <img class="produktdetaljbilde" src="${produkt.bilde}" alt="${produkt.navn}">
             <p>${produkt.beskrivelse}</p>
             <p>${produkt.minstepris} - ${produkt.hoyestepris} kr</p>
-        `;
+                <button class="kjopsknapp" data-legg-i-handlekurv="${produkt.id}">Legg i handlekurv</button>
+            `;
     </script>
+    <script src="script.js"></script>
 </body>
 </html>

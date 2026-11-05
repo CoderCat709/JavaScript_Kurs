@@ -18,6 +18,10 @@
         <a href="produktside.html" aria-current="page">Produkter</a>
         <a href="info.html">Info</a>
         <a href="kontaktside.html">Kontakt</a>
+        <a class="kurvlenke" href="handlekurv.html" aria-label="Åpne handlekurv">
+            <img src="img/shopping-cart.png" alt="Handlekurv">
+            <span id="antallKurv">0</span>
+        </a>
     </nav>
     <main>
         <h2 id="tittel">Produkter</h2>
@@ -30,6 +34,7 @@
                     <p>Godt tastatur til spill og skole.</p>
                     <p>Produkt-ID: tastatur</p>
                     <p class="pris">350 - 650 kr</p>
+                    <button class="leggTilKnapp" data-legg-i-handlekurv="tastatur">Legg i handlekurv</button>
                 </article>
             </a>
 
@@ -41,6 +46,7 @@
                     <p>Skarp skjerm til spill og skole.</p>
                     <p>Produkt-ID: skjerm</p>
                     <p class="pris">1 200 - 2 200 kr</p>
+                    <button class="leggTilKnapp" data-legg-i-handlekurv="skjerm">Legg i handlekurv</button>
                 </article>
             </a>
 
@@ -52,6 +58,7 @@
                     <p>Praktisk PC til skole, arbeid og spill.</p>
                     <p>Produkt-ID: pc</p>
                     <p class="pris">8 000 - 14 000 kr</p>
+                    <button class="leggTilKnapp" data-legg-i-handlekurv="pc">Legg i handlekurv</button>
                 </article>
             </a>
 
@@ -63,6 +70,7 @@
                     <p>Presis mus med rask respons.</p>
                     <p>Produkt-ID: mus</p>
                     <p class="pris">250 - 700 kr</p>
+                    <button class="leggTilKnapp" data-legg-i-handlekurv="mus">Legg i handlekurv</button>
                 </article>
             </a>
 
@@ -74,6 +82,7 @@
                     <p>Alt du trenger til en gamingplass.</p>
                     <p>Produkt-ID: setup</p>
                     <p class="pris">16 000 - 26 000 kr</p>
+                    <button class="leggTilKnapp" data-legg-i-handlekurv="setup">Legg i handlekurv</button>
                 </article>
             </a>
 
@@ -85,6 +94,7 @@
                     <p>God lyd til spill og samtaler.</p>
                     <p>Produkt-ID: headset</p>
                     <p class="pris">1 000 - 2 500 kr</p>
+                    <button class="leggTilKnapp" data-legg-i-handlekurv="headset">Legg i handlekurv</button>
                 </article>
             </a>
 
@@ -96,6 +106,7 @@
                     <p>Enkel mobil til bilder, apper og kontakt.</p>
                     <p>Produkt-ID: mobil</p>
                     <p class="pris">5 000 - 9 500 kr</p>
+                    <button class="leggTilKnapp" data-legg-i-handlekurv="mobil">Legg i handlekurv</button>
                 </article>
             </a>
 
@@ -107,6 +118,7 @@
                     <p>En boks med tilfeldige overraskelser.</p>
                     <p>Produkt-ID: mysterybox</p>
                     <p class="pris">200 - 201 kr</p>
+                    <button class="leggTilKnapp" data-legg-i-handlekurv="mysterybox">Legg i handlekurv</button>
                 </article>
             </a>
         </section>
@@ -115,6 +127,7 @@
         <p>Eid og vedlikeholdt av Henrik Huseby</p>
         <a href="kontaktside.html">Kontakt Info</a>
     </footer>
-    <script src="Nettbutikk.js"></script>
+    <script src="produkter.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -47,3 +47,9 @@ laget en produktside som viser informasjonen til produktet som ble valgt
 laget produkter.js som inneholder produktdataene i en array med objekter
 lagt til riktige priser på produktkortene
 rettet lenker i navigasjonen slik at de bruker index.html
+legget til handlekurv, ikon til handlekruv, nye div
+fikset hover på knapper,
+la til nye classes for handlekruv i style.css
+la til handlekruv med bruk av hjelpemidler
+ga fungere ID til alle produkter, forbedret class navn, brukt bedre classes og fancy divs som artical span og section
+Forbedret UI og UX på nettsiden min sånn at den er enklere og bruke

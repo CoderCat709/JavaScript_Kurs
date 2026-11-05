@@ -74,4 +74,9 @@ const produkter = [
     }
 ];
 
-let handlekurv = [];
+const lagret_kurv = JSON.parse(localStorage.getItem("handlekurv") || "[]");
+let handlekurv = Array.isArray(lagret_kurv) ? lagret_kurv : [];
+
+function save_kurv() {
+    localStorage.setItem("handlekurv", JSON.stringify(handlekurv));
+}
