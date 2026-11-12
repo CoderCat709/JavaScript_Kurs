@@ -58,3 +58,4 @@ Forbedret UI og UX på nettsiden min sånn at den er enklere og bruke
 jeg har lagt til en søke funksjon, jeg har froandret produktsiden for at den skal fugrere fordi siden jeg alerede hadde definert produktene så skrev de bare ned produktene,
 jeg har ikke endret noe stort i UI og UX, bortsett fra søkefunksjonalitet, brukte w3school og javascript- lag en enkel søkefunksjon,
 måten html produkside fungerer nå er at den tar produkt idene fra javascript og putter dem alle i en liste og så printer dem ut, på html siden,
+forbedret UI, lagt til border radius for flere ting for å forbedre desing

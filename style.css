@@ -23,12 +23,18 @@ header .logo img {
 }
 
 .hovedmeny {
-  flex-wrap: wrap;
-  margin: 16px 0 32px;
+  margin: 12px 0 30px;
   padding-bottom: 12px;
   border-bottom: 1px solid #ddd;
+  border-radius: 10px;
+  transition: transform 20s, box-shadow 0.2s;
+  
 }
 
+.hovedmeny a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.12);
+}
 a {
   color: #000000;
 }
@@ -36,6 +42,12 @@ a {
 .hovedmeny a,
 .tilbake {
   text-decoration: none;
+  border-radius: 7px;
+  border:#ddd solid 0.4px;
+  padding: 2px;
+  margin-bottom: -3px;
+  transform: translateY(-4px);
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.12);
 }
 
 .kurvlenke {
@@ -111,11 +123,14 @@ main {
   height: 150px;
   object-fit: contain;
   margin-bottom: 8px;
+  border-radius: 25px;
+  border:#000000;
 }
 
 .vare h2 {
   margin: 0;
   font-size: 1.15rem;
+
 }
 
 .vare p {
@@ -141,6 +156,7 @@ main {
   object-fit: contain;
 }
 
+
 .kjopsknapp {
   display: inline-block;
   padding: 9px 14px;
@@ -150,6 +166,7 @@ main {
   background: #514d2b;
   border: 0;
   cursor: pointer;
+  border-radius: 14px;
 }
 
 .kjopsknapp:hover {
@@ -163,6 +180,7 @@ main {
   color: #fff;
   font: inherit;
   background: #514d2b;
+  border-radius: 13px;
   border: 0;
   cursor: pointer;
 }
@@ -178,6 +196,18 @@ main {
   object-fit: contain;
 }
 
+.bilde {
+  border-radius: 6px;
+}
+
+.tilbake {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tilbake a:hover {
+  transform: translateY(-2px);
+}
+
 footer {
   justify-content: space-between;
   flex-wrap: wrap;
@@ -185,3 +215,4 @@ footer {
   padding-top: 12px;
   border-top: 1px solid #ddd;
 }
+
