@@ -63,5 +63,21 @@ document.querySelectorAll("[data-legg-i-handlekurv]").forEach((knapp) => {
     });
 });
 
+const filterKnapper = document.querySelectorAll(".filterKnapp");
+
+filterKnapper.forEach(knapp => {
+    knapp.addEventListener("click", () => {
+        let kategori = knapp.dataset.kategori;
+        if (kategori === "Alle") {
+            visProdukter(produkter);
+        }
+        else {
+            let filtrerteProdukter = produkter.filter(
+                produkt => produkt.kategori === kategori
+            );
+            visProdukter(filtrerteProdukter);
+        }
+    });
+});
 opptater();
 vis_kurv();

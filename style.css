@@ -216,3 +216,18 @@ footer {
   border-top: 1px solid #ddd;
 }
 
+
+@media (max-width: 600px) {
+  body {
+    padding: 12px;
+  }
+
+  header,
+  .hovedmeny {
+    flex-wrap: wrap;
+  }
+
+  .produktdetalj {
+    grid-template-columns: 1fr;
+  }
+}
