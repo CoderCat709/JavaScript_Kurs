@@ -59,3 +59,4 @@ jeg har lagt til en søke funksjon, jeg har froandret produktsiden for at den sk
 jeg har ikke endret noe stort i UI og UX, bortsett fra søkefunksjonalitet, brukte w3school og javascript- lag en enkel søkefunksjon,
 måten html produkside fungerer nå er at den tar produkt idene fra javascript og putter dem alle i en liste og så printer dem ut, på html siden,
 forbedret UI, lagt til border radius for flere ting for å forbedre desing
+har lagt til media sånn at nettsiden min fungerer på mobil og større og mindre enheter
