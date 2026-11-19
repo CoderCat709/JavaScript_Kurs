@@ -16,7 +16,6 @@ en liste med variabler som skal si noe
 User id
 Hva er const
 
-
 Uke 41
 Denne uken driver vi med algorytmer inni javascript
 
@@ -60,3 +59,17 @@ jeg har ikke endret noe stort i UI og UX, bortsett fra søkefunksjonalitet, bruk
 måten html produkside fungerer nå er at den tar produkt idene fra javascript og putter dem alle i en liste og så printer dem ut, på html siden,
 forbedret UI, lagt til border radius for flere ting for å forbedre desing
 har lagt til media sånn at nettsiden min fungerer på mobil og større og mindre enheter
+
+
+jobber med, og implementering
+legge til pris funksjon, total pris av produkter i handlevogn
+fikse hover effects på navbar og noen produkter,
+fikse kode som ikke gjør noe spesielt 
+
+
+
+
+Planer for neste økt
+legge til ferdig pris til produktene
+forbedre UI og UX på nettsiden for et mer moderne design
+fjerne unødvendig kode i nettside, fiks kode som ikke gjør noe spesielt 
